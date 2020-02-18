@@ -1,0 +1,997 @@
+.conteiner{box-shadow: none !important;}
+#cabecalho .conteiner{max-width: 100% !important; }
+.secao-banners .conteiner{max-width: 100% !important; padding: 0px !important;}
+
+
+/*********** CONTROLE DE NAV ************/
+.flex-control-nav li a{background: #C4C4C4;}
+.flex-control-nav li .flex-active{background: #858585 !important;}
+
+/*********** SHOW **********/
+.show-foto .flex-control-nav{position: relative; bottom:0;}
+
+/*********** BUSCA SUPERIOR **********/
+.buscar form{margin: 0;}
+
+.buscar form input{
+	width: 50px;
+  	display: none;
+  	margin: 0;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 0px;
+    background: none;
+    background-image: url('https://cdn.awsli.com.br/1235/1235390/arquivos/lupa.png');
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	color: #FFF;
+}
+
+.buscar form input::placeholder{color: #FFF;}
+
+.buscar form input:focus{
+	border-color: white;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.buscar:hover a{display:none;}
+.buscar:hover input{display:block;}
+.buscar:hover input:focus{width: 125px;}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body,html{
+	font-family: 'Josefin Sans', sans-serif !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+/*********** NAVIGATION **********/
+
+.navigation{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    
+}
+
+.navigation a{color: #FFF;}
+
+/**** NAVIGATION MOBILE ****/
+    .navigation-mobile{
+        background: #9D19BA;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        place-items: center;
+    }
+
+    .navigation-mobile .qtd-carrinho{
+        position: absolute;
+        right: 20px;
+        color: #fff;
+        background: #F36CBC;
+        padding: 5px 10px;
+        border-radius: 50px;
+    }
+
+    .navigation-mobile-content ul{border-bottom: 1px solid #F2F2F2; margin: 20px 0px; padding-bottom: 10px;}
+    .navigation-mobile-content ul li{display: block; list-style: none; text-align: center; padding: 7px 0px;}
+    .navigation-mobile-content ul li input{width: 80%; border: none; padding: 10px 20px; border-radius: 50px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); color: #000; background: url("https://cdn.awsli.com.br/1235/1235390/arquivos/lupamob.png"), #f2f2f2; background-position: right center; background-repeat: no-repeat; background-position-x: 95%;}  
+    .navigation-mobile-content ul li input::placeholder{color: #000; font-size: 14px;}
+    .navigation-mobile-content ul li input:focus{border: none; outline: none;}
+    .navigation-mobile-content ul li a{text-decoration: none; color: #000}
+
+    @media (max-width:339.98px){
+        .navigation-mobile .qtd-carrinho{right: 10px}
+    }
+
+
+/*logo*/
+	.navigation .logo {
+	    text-align: center;
+	    height: 100%;
+	}
+	
+	.navigation .logo img {
+	    margin: 8px auto;
+	}
+	
+/*menu*/
+	.navigation .main-menu .menu-wrapper{
+	    margin: 20px auto;
+	}
+	
+	.navigation .main-menu .menu-wrapper ul {
+	    padding: 0;
+	    margin: 0;
+	    list-style: none;
+	    text-align: left;
+	}
+	
+	.navigation .main-menu .menu-wrapper ul li {
+	    display: inline-block;
+	    margin: 20px 12px;
+	}
+	
+/*login*/
+	.navigation .acount .acount-wrapper{
+	    margin: 20px auto;
+	}
+	
+	.navigation .acount .acount-wrapper ul {
+	    padding: 0;
+	    margin: 0;
+	    list-style: none;
+	    text-align: center;
+	}
+	
+	.navigation .acount .acount-wrapper ul li {
+	    display: inline-block;
+	    margin: 20px 12px;
+	}
+	
+	.navigation .acount .acount-wrapper ul .log{
+	    border-left: .1rem solid;
+	    padding-left: 2.5rem;
+	    color: #fff;
+	}
+
+
+
+
+/*********** SHOW ***********/
+.show{
+    height: 555px;
+    padding: 90px;
+}
+
+.show .show-foto .flex-direction-nav{display:none;}
+
+.show .show-wrapper{
+    background-color: #fff;
+    height: 375px;
+}
+
+.show .show-wrapper .show-foto{
+    height: 100%;
+}
+
+.show .slick-dots{
+    position: absolute;
+    bottom: 0;
+}
+
+.show .show-wrapper .show-content{
+    width: 490px;
+    height: initial;
+    margin: 39px;
+    padding: 0;
+}
+
+.show .show-wrapper .show-content .txt4{
+    font-size: 30px;
+    color: #9D19BA;
+    margin-bottom: 0;
+    font-weight: 100;
+}
+
+.show .show-wrapper .show-content .txt5{
+    font-size: 45px;
+    color: #9D19BA;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.show .show-wrapper .show-content .txt6{
+    font-size: 16px;
+    color: #000;
+}
+
+
+.show .show-wrapper .show-content .btn-order2 button{
+    width: 254px;
+    height: 52px;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    background-color: #F36CBC;
+    color: #fff;
+    margin-top: 35px;
+    
+}
+
+@media (min-width: 1200px){
+    [class*="span"] {
+        margin-left: 0 !important;
+    }
+}
+
+/************** MINI CART *************/
+.mini-cart{display:none;}
+.cart:hover .mini-cart{display:block;}
+.mini-cart .carrinho-interno{display:block;}
+.mini-cart .carrinho-interno{top: 0;}
+
+
+.mini-cart{
+	position: absolute;
+	top: 70px;
+	right: 100px;
+	width: 320px;
+	background: #FFF;
+	z-index: 999;
+	min-height: 100px;
+}
+
+.mini-cart:before {
+	content: ''; 
+	top: -5px; 
+	left: 55px; 
+	position: absolute; 
+	border: 0; 
+	border-radius: 4px; 
+	width: 8px; 
+	z-index: 1; 
+	padding: 8px; 
+	transform: rotate(45deg); 
+	height: 8px; 
+	background: #ffffff;
+	
+}
+
+/*** PRODUTOS HOME ***/
+.botao-comprar{text-align:center; margin-top:15px;}
+.botao-comprar a{background: #ee4266;color: #FFF;padding: 10px 80px;font-size: 16px;}
+.botao-comprar a:hover{background: #b44b62; color: #FFF;}
+
+.top-banner{
+	background-image: url(https://cdn.awsli.com.br/1235/1235390/arquivos/mulherproduct.png);
+    background-repeat: no-repeat;
+    height: 817px;
+    background-size: contain;
+}
+
+.bottom-banner{
+	background-image: url(https://cdn.awsli.com.br/1235/1235390/arquivos/barra.png);
+    width: 100%;
+    height: 1000px;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: -530px;
+}
+
+.top-banner .textos{
+	position: absolute;
+    color: #FFF;
+    width: 500px;
+    left: 130px;
+    margin-top: 150px;
+}
+
+.top-banner .textos h1{
+	margin: 0;
+    line-height: 0.3;
+    font-weight: 300;
+}
+
+.top-banner .textos h1{
+    margin: 0;
+    line-height: 1;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.top-banner .textos h2{
+	margin: 0;
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.top-banner .textos p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#listagemProdutos{
+	margin-top: -370px;
+}
+
+.listagem-linha{
+    /*background: #FFF !important;*/
+    margin: 0;
+    padding: 0;
+    border: none
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.listagem-linha ul li{
+	padding: 20px;
+	border: none
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.listagem-linha .listagem-item{
+   background: #FFF !important;
+   border-radius: 18px;
+   box-shadow: 2px 2px 4px 1px #9D19BA;
+   transition: box-shadow .1s;
+}
+
+.listagem-item .acoes-produto{display: none;}
+
+.listagem-item .produto-sobrepor{
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(255,255,255,0)
+}
+
+.listagem-item .produto-sobrepor{
+	display: none !important;
+}
+
+.listagem-item .imagem-produto img{
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.listagem-item .info-produto{
+    padding: 15px 5px 10px;
+    position: relative;
+}
+
+.listagem-item .info-produto a{
+    text-align: center;
+    height: 40px;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    font-size: 15px;
+    color: #9D19BA !important;
+}
+
+.info-produto .preco-a-partir p{
+    margin: 0;
+    color: #9D19BA;
+}
+
+.info-produto .corte-preco{
+    font-size: 12px;
+}
+
+.info-produto .buy-price{
+    font-size: 20px;
+}
+
+
+.listagem-item  .botao-comprar a{
+    background: #f36cbc;
+    color: #FFF !important;
+    border-radius: 30px;
+    font-size: 18px;
+    border: none;
+    padding: 17px 0;
+    height: 52px;
+}
+
+.info-produto .preco-a-partir p{
+    margin: 0;
+    color: #9D19BA;
+}
+
+.preco-produto > div,.preco-a-partir{
+	display: grid;
+    grid-template-rows: 18px 22px 18px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.preco-produto .preco-a-partir{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 !important;
+}
+
+.preco-produto .preco-a-partir > span{
+	color: #9D19BA;
+	font-size: 12px;
+}
+
+.preco-produto .preco-venda,.preco-promocional{
+    color: #9D19BA;
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+.preco-produto s.preco-venda{
+	color: #9D19BA;
+	font-size: 12px !important;
+	font-weight: normal;
+}
+
+.preco-promocional{
+	grid-row-start: 2;
+	margin: 0 !important;
+}
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 1200px) {
+	.navigation-mobile{display:none;}
+
+	/********** MAIN-BANNER ***********/
+	.main-banner{
+	    height: 541px;
+	    padding: 0;
+	}
+	
+	.main-banner .img-banner{
+	    width: 100%;
+	    height: inherit;
+	    background-color: none;
+	    background-image: url('https://cdn.awsli.com.br/1235/1235390/arquivos/bannerprincipal.png');
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	}
+	
+	.main-banner .img-banner .conteudo-banner{
+	    width: 680px;
+	    height: initial;
+	    float: left;
+	    margin-top: 120px;
+	    margin-left: 115px;
+	    color: #fff;
+	}
+	
+	.main-banner .img-banner .conteudo-banner .txt1{
+	    font-size: 62px;
+	    font-weight: 100;
+	    margin-bottom: 0;
+	}
+	
+	.main-banner .img-banner .conteudo-banner .txt2{
+	    font-size: 63px;
+	    font-weight: bold;
+	    margin-top: 25px;
+	    font-weight: 500;
+	
+	}
+	
+	.main-banner .img-banner .conteudo-banner .txt3{
+	    width: 477px;
+	    font-size: 22px;
+	    font-weight: 300;
+	}
+	
+	.main-banner .img-banner .conteudo-banner .btn-order button{
+	    width: 255px;
+	    height: 55px;
+	    border-radius: 30px;
+	    border: none;
+	    font-size: 20px;
+	    font-weight: 400;
+	    background-color: #F36CBC;
+	    color: #fff;
+	}
+	
+	.hr1{
+	    margin: 0;
+	    height: 26px;
+	    background-color:#B42FD0;
+	    border: none;
+	}
+	
+	.hr2{
+	    margin: 0;
+	    height: 76px;
+	    background-color:#9D19BA;
+	    border: none;
+	}
+	
+	/* MINICARDS */
+
+	.infos-products{margin-top: -90px;}
+	
+	.imagemzinha{
+	    width: 1100px;
+	    margin: 0 auto;
+	    padding-top: 30px;
+	}
+	
+	.imagemzinha > .conteiner{
+	    text-align: center;
+	    width: 635px;
+	    margin: 0 auto;
+	    color: #951CAE;
+	}
+	
+	.imagemzinha > .conteiner h2{
+	    font-size: 36px;
+	}
+	
+	.imagemzinha > .conteiner h3{
+	    font-size: 16px;
+	}
+	
+	.imagemzinha .minicards .wrapper-card{
+	    text-align: center;
+	    margin-top: 20px;
+	}
+	
+	.imagemzinha .minicards .thumb{
+	    width: 155px;
+	    height: 163px;
+	    display: inline-block;
+	    margin: 20px;
+	    
+	}
+	
+	.imagemzinha .minicards .thumb figure{
+	    height: inherit;
+	}
+	
+	.imagemzinha .minicards .thumb figure img{
+	    width: 85px;
+	    height: 75px;
+	}
+	
+	.imagemzinha .minicards .thumb figure figcaption{
+	    margin-top: 20px;
+	}
+	
+	.imagemzinha .minicards .thumb  figcaption h5{
+	    font-size: 18px;
+	    font-weight: bold;
+	    color: #951CAE;
+	}
+	
+	.imagemzinha .minicards .thumb  figcaption h6{
+	    font-size: 14px;
+	    color: #951CAE;
+	    font-weight: normal;
+	}
+	
+	
+	.imagemzinha .minicards .more .btn-saiba{
+	    height: 52px;
+	    width: 254px;
+	    background-color: #F36CBC;
+	    border: none;
+	    border-radius: 30px;
+	    font-size:20px;
+	    font-weight: 400;
+	    color: #fff;
+	    margin: 30px auto;
+	}
+}
+
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	
+	.navigation{display:none}
+	
+	.navigation-mobile{
+		justify-content: space-between;
+		padding: 0 20px;
+	}
+	
+	.navigation-mobile .qtd-carrinho{right: 10px;}
+	
+	/********** MAIN-BANNER ***********/
+	.main-banner{
+	    height: 410px;
+	    padding: 0;
+	}
+	
+	.main-banner .img-banner{
+	    width: 100%;
+	    height: 410px;
+	    background-color: none;
+	    background-image: url('https://cdn.awsli.com.br/1235/1235390/arquivos/bannerprincipal.png');
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	}
+	
+	.main-banner .img-banner .conteudo-banner{
+	    width: 680px;
+	    height: initial;
+	    float: left;
+	    margin-top: 120px;
+	    margin-left: 115px;
+	    color: #fff;
+	}
+	
+	.main-banner .img-banner .conteudo-banner .txt1{
+	    font-size: 62px;
+	    font-weight: 100;
+	    margin-bottom: 0;
+	}
+	
+	.main-banner .img-banner .conteudo-banner .txt2{
+	    font-size: 63px;
+	    font-weight: bold;
+	    margin-top: 25px;
+	    font-weight: 500;
+	
+	}
+	
+	.main-banner .img-banner .conteudo-banner .txt3{
+	    width: 477px;
+	    font-size: 22px;
+	    font-weight: 300;
+	}
+	
+	.main-banner .img-banner .conteudo-banner .btn-order button{
+	    width: 255px;
+	    height: 55px;
+	    border-radius: 30px;
+	    border: none;
+	    font-size: 20px;
+	    font-weight: 400;
+	    background-color: #F36CBC;
+	    color: #fff;
+	}
+	
+	.hr1{
+	    margin: 0;
+	    height: 26px;
+	    background-color:#B42FD0;
+	    border: none;
+	}
+	
+	.hr2{
+	    margin: 0;
+	    height: 76px;
+	    background-color:#9D19BA;
+	    border: none;
+	}
+	
+	/* MINICARDS */
+
+	.infos-products{margin-top: -90px;}
+	
+	.imagemzinha{
+	    width: 1100px;
+	    margin: 0 auto;
+	    padding-top: 30px;
+	}
+	
+	.imagemzinha > .conteiner{
+	    text-align: center;
+	    width: 635px;
+	    margin: 0 auto;
+	    color: #951CAE;
+	}
+	
+	.imagemzinha > .conteiner h2{
+	    font-size: 36px;
+	}
+	
+	.imagemzinha > .conteiner h3{
+	    font-size: 16px;
+	}
+	
+	.imagemzinha .minicards .wrapper-card{
+	    text-align: center;
+	    margin-top: 20px;
+	}
+	
+	.imagemzinha .minicards .thumb{
+	    width: 155px;
+	    height: 163px;
+	    display: inline-block;
+	    margin: 20px;
+	    
+	}
+	
+	.imagemzinha .minicards .thumb figure{
+	    height: inherit;
+	}
+	
+	.imagemzinha .minicards .thumb figure img{
+	    width: 85px;
+	    height: 75px;
+	}
+	
+	.imagemzinha .minicards .thumb figure figcaption{
+	    margin-top: 20px;
+	}
+	
+	.imagemzinha .minicards .thumb  figcaption h5{
+	    font-size: 18px;
+	    font-weight: bold;
+	    color: #951CAE;
+	}
+	
+	.imagemzinha .minicards .thumb  figcaption h6{
+	    font-size: 14px;
+	    color: #951CAE;
+	    font-weight: normal;
+	}
+	
+	
+	.imagemzinha .minicards .more .btn-saiba{
+	    height: 52px;
+	    width: 254px;
+	    background-color: #F36CBC;
+	    border: none;
+	    border-radius: 30px;
+	    font-size:20px;
+	    font-weight: 400;
+	    color: #fff;
+	    margin: 30px auto;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.navigation-mobile{display:none;}
+}
+
+/* Small devices (landscape phones, 340px and up) */
+@media (min-width: 340px) and (max-width: 767.98px) {
+	.navigation{display: none;}
+	
+	.navigation{display: none;}
+	
+	.main-banner{
+	    padding: 0;
+	}
+	
+	.main-banner .img-banner{
+	    width: 100%;
+	    background-image: url(https://cdn.awsli.com.br/1235/1235390/arquivos/bannerprincipal.png);
+	    background-size: cover;
+	    background-position-x: -140px;
+	    background-repeat: no-repeat;
+	    background-color: white;
+	    height: 230px;
+	}
+	
+	.main-banner .img-banner .conteudo-banner{
+		margin: 0;
+	    color: #fff;
+	    padding-top: 20px;
+	}
+	
+	.main-banner .img-banner .conteudo-banner .txt1{
+	    font-size: 25px;
+	    font-weight: 100;
+	    margin: 0;
+	    margin-left: 20px;
+	}
+	
+	.main-banner .img-banner .conteudo-banner .txt2{
+	    font-size: 25px;
+	    font-weight: bold;
+	    margin-top: 0;
+		margin-left: 20px;
+	}
+	
+	.main-banner .img-banner .conteudo-banner .txt3{
+        width: 221px;
+	    font-size: 14px;
+	    font-weight: 400;
+	    margin-left: 20px;
+	}
+	
+	.main-banner .img-banner .conteudo-banner .btn-order{
+		text-align: center;
+	}
+	
+	.main-banner .img-banner .conteudo-banner .btn-order button{
+	    border-radius: 30px;
+	    border: none;
+	    font-size: 16px;
+	    background-color: #F36CBC;
+	    color: #fff;
+	    text-align: center;
+	    padding: 10px 40px;
+	}
+	
+	.hr1, .hr2{display:none;}
+	
+	.show{
+		margin: 0;
+    	padding: 0 !important;
+	}
+	
+	.show .show-wrapper{}
+	
+	.show .show-wrapper .show-foto {
+	    height: auto;
+	    text-align: center;
+	}
+	
+	.show .show-wrapper .show-foto img{width: 200px;}
+	.flex-direction-nav{display:none;}
+	
+	.show .show-wrapper .show-content{
+		width: auto;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.show .show-wrapper .show-content .txt4{
+		font-size: 28px;
+	}
+	
+	.show .show-wrapper .show-content .txt5{
+		font-size: 32px;
+	}
+	
+	.show .show-wrapper .show-content .txt6{
+		margin: 0 10px;
+		margin-bottom: 10px;
+	}
+	
+	.show .show-wrapper .show-content .btn-order2{
+		text-align: center;
+	}
+	
+	.show .show-wrapper .show-content .btn-order2 button{
+	    border-radius: 30px;
+	    border: none;
+	    font-size: 16px;
+	    background-color: #F36CBC;
+	    color: #fff;
+	    text-align: center;
+	    padding: 10px 40px;
+	    width: auto;
+	    height: auto;
+	    margin: 0;
+	}
+}
+
+/* Extra small devices (portrait phones, less than 339px) */
+@media (max-width: 339.98px) {
+	.navigation{display: none;}
+	
+	.main-banner{
+	    padding: 0;
+	}
+	
+	.main-banner .img-banner{
+	    width: 100%;
+	    background-image: url(https://cdn.awsli.com.br/1235/1235390/arquivos/bannerprincipal.png);
+	    background-size: cover;
+	    background-position-x: -140px;
+	    background-repeat: no-repeat;
+	    background-color: white;
+	    height: 230px;
+	}
+	
+	.main-banner .img-banner .conteudo-banner{
+		margin: 0;
+	    color: #fff;
+	    padding-top: 20px;
+	}
+	
+	.main-banner .img-banner .conteudo-banner .txt1{
+	    font-size: 25px;
+	    font-weight: 100;
+	    margin: 0;
+	    margin-left: 20px;
+	}
+	
+	.main-banner .img-banner .conteudo-banner .txt2{
+	    font-size: 25px;
+	    font-weight: bold;
+	    margin-top: 0;
+		margin-left: 20px;
+	}
+	
+	.main-banner .img-banner .conteudo-banner .txt3{
+        width: 221px;
+	    font-size: 14px;
+	    font-weight: 400;
+	    margin-left: 20px;
+	}
+	
+	.main-banner .img-banner .conteudo-banner .btn-order{
+		text-align: center;
+	}
+	
+	.main-banner .img-banner .conteudo-banner .btn-order button{
+	    border-radius: 30px;
+	    border: none;
+	    font-size: 16px;
+	    background-color: #F36CBC;
+	    color: #fff;
+	    text-align: center;
+	    padding: 10px 40px;
+	}
+	
+	.hr1, .hr2{display:none;}
+	
+	.show{
+		margin: 0;
+    	padding: 0;
+    	margin-top: 20px;
+    	height: auto;
+	}
+	
+	.show .show-wrapper .show-foto {
+	    height: auto;
+	    text-align: center;
+	}
+	
+	.show .show-wrapper .show-foto img{width: 250px;}
+	.flex-direction-nav{display:none;}
+	
+	.show .show-wrapper .show-content{
+		width: auto;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.show .show-wrapper .show-content .txt4{
+		font-size: 22px;
+	}
+	
+	.show .show-wrapper .show-content .txt5{
+		font-size: 25px;
+	}
+
+	
+	.show .show-wrapper .show-content .btn-order2{
+		text-align: center;
+	}
+	
+	.show .show-wrapper .show-content .btn-order2 button{
+	    border-radius: 30px;
+	    border: none;
+	    font-size: 16px;
+	    background-color: #F36CBC;
+	    color: #fff;
+	    text-align: center;
+	    padding: 10px 40px;
+	    width: auto;
+	    height: auto;
+	    margin: 0;
+	}
+	
+	
+}
